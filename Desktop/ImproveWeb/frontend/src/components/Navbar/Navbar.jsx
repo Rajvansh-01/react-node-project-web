@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Switch, Route, Link, Component, Routes } from 
 import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "../../images/logo.jpg";
 import Phone from "../../images/phone.jpg";
-import Home from '../Home'
-import Contact from '../Contact'
+import Home from '../../pages/Home/Home'
+import Contact from '../../pages/Contact/Contacts'
 import "./navbar.css";
 
 export default function Navbar() { 
