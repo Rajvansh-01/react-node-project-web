@@ -5,14 +5,7 @@
     display: block;
     position: absolute;
     right: 0;
-    margin: 0 3%;
-  }
-
-  .middle-right{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    width: 15%;
+    margin: 0 3%; 
   }
   
   .phone-dial{
@@ -22,9 +15,10 @@
   .left{
     display: flex;
     flex-direction: row;
+    justify-content:space-between;
     margin: 0%;
     position: relative;
-    right: 25%;
+    right: 20%;
   }
 
   .upper-button{
@@ -73,7 +67,7 @@
   }
 
   .logo{
-    width: 70%;
+    width: 50%;
     padding-bottom: 5px;
     position: inherit;
     right: 5%;
@@ -100,8 +94,8 @@
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  height: 150vh;
-  margin: 1rem 0;
+  /* height: 150vh; */
+  margin: 8rem 0 2rem 0 !important;
   padding: 10px !important;
   ;
 }
@@ -110,8 +104,9 @@
 .second-container, .enhance-container, .case-study, .services, .experience-contain, .media-div, .interested, .footer{
   display: flex;
   flex-direction: column;
-  height: 200vh;
   overflow: hidden;
+  margin: 2rem 0;
+  height: auto;
 } 
 
 .div-one{
@@ -124,22 +119,39 @@
 
 .grid-container, .grid-container-services, .grid-container-experiences{
   justify-content: space-around;
+  width: 100%;
 }
 
 /* ................Enhance............... */
-.enhance-container{
+/* .enhance-container{
   height: 170vh;
+} */
+
+/* ............Services.................  */
+.grid-container-services{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 6px;
+  margin: 0 auto;
+  /* text-align: center; */
+  width: 60%;
 }
 
 /* .................CaseStudy.....................  */
 .case-study{
-  height: 120vh;
+  /* height: 120vh; */
+  position: relative;
+}
+
+.grid-container-casestudy, .grid-container-media{
+  width: 100%;
+  grid-template-columns: auto;
 }
 
 /* ...................Experience..................  */
-.experience-contain{
+/* .experience-contain{
   height: 210vh;
-}
+} */
 
 .grid-container-experiences, .grid-container-media{
   width: 100%;
@@ -151,13 +163,13 @@
 
 /* .................Media.............  */
 .media-div{
-  height: 130vh;
+  /* height: 130vh; */
   width: 100%;
 }
 
 /* ................Interested...........  */
 .interested{
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -166,9 +178,11 @@
 
 .client-h{
   display: inline-block;
-    vertical-align: middle;
-    z-index: 5;
-    margin: auto;
+  vertical-align: middle;
+  z-index: 5;
+  margin: auto;
+  padding: 0 !important;
+  width: auto;
 }
 
 .interest-button{
@@ -181,9 +195,19 @@
   text-align: center;
  }
 
- .footer{
-  height: 170vh;
+ .footer, .interested{
+  margin: 0 !important;
+  padding-bottom: 20px;
  }
+ 
+ .for-margin{
+  border: none;
+ }
+
+ .footer-sec-1, .footer-sec-2, .footer-sec-3{
+  padding: 0 !important;
+ }
+
 
  /* ............Contact-Page.............  */
  .contains{
@@ -196,12 +220,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px 0;
+  margin: 0 0 2rem 0 !important;
+  position: inherit;
  }
 
  .contact-blur{
-  height: 50vh;
-  margin-bottom: 90px;
+  /* height: 50vh; */
+  margin: 0 !important;
  }
 
  .combined{
@@ -218,18 +243,12 @@
  }
 
  .map{
-  display: block;
-  position: relative;
+  display: none;
+  /* position: relative; */
  }
-
- .footer{
-  display: block;
-  position: relative;
- }
-
  /* ...................Blog...................  */
  .single-blog{
   width: 100%;
  }
-}
 
+}
